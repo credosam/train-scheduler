@@ -31,7 +31,7 @@ def main():
     qbtn.setToolTip('Quit Application')
     qbtn.resize(sbtn.sizeHint())
     qbtn.clicked.connect(QtCore.QCoreApplication.instance().quit)
-    qbtn.move(screen.width()-170, screen.height()-70)
+    qbtn.move(screen.width()-200, screen.height()-70)
 
 
     
