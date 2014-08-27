@@ -6,11 +6,13 @@ def main():
     
     # create the screen object
     screen = QtGui.QDesktopWidget().screenGeometry()
+    WIDTH = 1300
+    HEIGHT = 700
     
     
     # assign height and width of desktop screen to the widget
     w = QtGui.QWidget()
-    w.resize(screen.width(),screen.height())
+    w.resize(WIDTH,HEIGHT)
     w.setWindowTitle('Train Traffic Simulator')
 
     # Time slider
@@ -31,7 +33,7 @@ def main():
     qbtn.setToolTip('Quit Application')
     qbtn.resize(sbtn.sizeHint())
     qbtn.clicked.connect(QtCore.QCoreApplication.instance().quit)
-    qbtn.move(screen.width()-200, screen.height()-70)
+    qbtn.move(WIDTH-200, HEIGHT-70)
 
 
     
